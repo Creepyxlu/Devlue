@@ -1,0 +1,35 @@
+@mixin title-animation($trans, $ease){
+  transform: translateY($trans);
+  animation-timing-function: $ease;
+}
+@mixin all-titles ($l-s, $f-s){
+  letter-spacing:$l-s;
+  font-size: $f-s;
+  line-height:7vh;
+  text-align: center;
+  text-shadow: $color-secundario 5px 3px 1px;
+	animation: title-animation 0.9s both;
+  @keyframes title-animation{
+    0% {@include title-animation(-45px, ease-in);}
+    40% {@include title-animation(-24px, ease-in);}
+    65% {@include title-animation(-12px, ease-in);}
+    82% {@include title-animation(-6px, ease-in);}
+    93% {@include title-animation(-4px, ease-in);}
+    25%,55%,75%,87% {@include title-animation(0px, ease-out);}
+    100% {@include title-animation(0px, ease-out);}
+  }
+  @media screen and (max-width: 641px){
+    font-size: 2rem;
+  }
+}
+@mixin img-entrance{
+  animation: img-entrance-kayframes 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  @keyframes img-entrance-kayframes{
+    0% {transform: translateZ(-150px) translateX(-150px);}
+    100% {transform: translateZ(0) translateX(0);}
+  }
+}
+@mixin img-heartbeat ($scale, $ease){
+  transform: scale($scale);
+  animation-timing-function: $ease;
+}

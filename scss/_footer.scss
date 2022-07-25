@@ -1,0 +1,95 @@
+footer{
+  width: 98%;
+  background-color:$gris;
+  border-radius: 15px;
+  border: $color-secundario 2px solid;
+  margin: 0 1%;
+  height: auto;
+  .box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 280px;
+    .logo{
+      svg{
+        margin-top: 14%;
+        width: 300px;
+        height: 300px;
+      }
+      #rat-eye{
+        animation: look-around 4s infinite;
+      }
+      @keyframes look-around {
+        0% { transform: translate(0) }
+        5% { transform: translate(1%, -.5%) }
+        10% { transform: translate(1%, -.5%) }
+        15% { transform: translate(-2%, -.5%) }
+        20% { transform: translate(-2%, -.5%) }
+        25% { transform: translate(0, 0) }
+        100% { transform: translate(0, 0) }
+      }
+    }
+    .text{
+      max-height: 280px;
+      margin: 0 auto;
+      width: 100%;
+      color:$color-secundario;
+      background-color: $transparent-dark-black;
+      padding: 13px;
+      border-radius: 7px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      h2{
+        text-align: center;
+        font-size: 2rem;
+      }
+      p{    
+        text-align: center;  
+        color:$color-secundario;
+        font-size: 1.6rem;
+      }
+    }
+    .social{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      ul{
+        width: 80%;
+        display: grid;
+        padding:   0 20%;
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        li a{
+            .icon-3d {
+              padding: 10px;
+              color: #fff;
+              &:hover {
+                -webkit-animation: icon3d 200ms infinite;
+                      animation: icon3d 200ms infinite;
+              }
+              @keyframes icon3d {
+                0% {
+                  text-shadow: 5px 4px rgba(244,67,54,1), -5px -6px rgba(33,150,243,1);
+                }
+                25% {
+                  text-shadow: -5px -6px rgba(244,67,54,1), 5px 4px rgba(33,150,243,1);
+                }
+                50% {
+                  text-shadow: 5px -4px rgba(244,67,54,1), -8px 4px rgba(33,150,243,1);
+                }
+                75% {
+                  text-shadow: -8px -4px rgba(244,67,54,1), -5px -4px rgba(33,150,243,1);
+                }
+                100% {
+                  text-shadow: -5px 0 rgba(244,67,54,1), 5px -4px rgba(33,150,243,1);
+                }
+              }
+            }
+        }
+      }
+    }
+  }
+}

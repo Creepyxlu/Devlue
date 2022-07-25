@@ -1,0 +1,87 @@
+<!-- 
+  hacer :c 
+ básicamente cuando sepa hacer un form de correo eléctronic con js
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    <section class="section-2">
+      <h2>Registro</h2>
+      <h3>Para comentar de forma pública</h3>
+      <form class="form row">
+          <div class="form__inicial col-12 col-md-7 col-xl-12">
+              <div class="rounded-3 mt-3">
+                  <input required type="text">
+                  <label for="nombre">
+                      <span>Nombre(s)</span>
+                  </label>
+              </div>
+
+                  <div class="rounded-3">
+                      <input required type="text">
+                      <label for="apellido">
+                          <span>Apellido(s)</span>
+                      </label>
+                  </div>
+
+                  <div class="rounded-3">
+                      <input class="edad-input" required type="number"> 
+                      <label class="edad-lbl" for="edad">
+                          <span class="edad-span">Edad</span>
+                      </label>
+                  </div>
+
+              </div>
+
+              <div class="form__genero my-5 col-12 col-md-4 col-xl-12">
+                  <h3 class="fs-5">
+                      Por favor seleccione el género con el que usted se identifique
+                  </h3>
+
+                  <div class="form__genero__option">
+                      <label for="femenino"> Femenino</label>
+                      <input title="female" type="radio" name="genero" value="femenino">
+                  </div>
+
+                  <div class="form__genero__option">
+                      <label for="masculino">Masculino</label>
+                      <input type="radio" name="genero" value="masculino">
+                  </div>
+
+                  <div class="form-genero__option">
+                      <label class="gap-3" for="otro"> Otro</label>
+                      <input required type="radio" name="genero" value="otro"> 
+                  </div>
+                      
+              </div>          
+              <div class="form__terminos my-5 col-12">
+                      <label for="terminos">
+                        <!-- escribir que su comentario podría publicarse poniendo su correoe lectronico y demás -->
+                          Estoy de acuerdo con enviar la información escrita
+                      </label>
+                      <input required type="checkbox" required>
+              </div>
+
+              <div class="form__comentario my-3">
+                  <label for="comentar">Aquí hay una pequeña caja para que escribas tu opinión o sugerencia acerca del sitio :]</label>
+                  <textarea class="rounded-3" cols="30" rows="4"></textarea>
+              </div>
+
+              <div class="form__buttons my-1">
+                  <button class="rounded-pill p-3">Enviar</button> 
+                  <input class="rounded-pill p-3" type="reset" value="Limpar">
+              </div>
+      </form>
+  </section>
+  </main>
+</body>
+</html>

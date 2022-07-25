@@ -1,0 +1,173 @@
+header{
+  position: sticky;
+  width: 100%;
+  top: 0;
+  padding: .7% 1%;
+  transition: all .3s ease;
+  z-index: 200;
+  align-items: center;
+  font-family: "Space Mono", monospace;
+  display: flex;
+  justify-content: space-between;
+  nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .img-text{
+      display: flex;
+      transition: scale 200ms ease;
+      align-items: center;
+      width: 40%;
+      img{
+        margin-right: 2%;
+        max-width: 75px;
+        max-height: 74px;
+        animation: heartbeat 1.5s ease-in-out infinite both;
+        @keyframes heartbeat{
+          from, 45%{
+             @include img-heartbeat(1, ease-out);
+             transform-origin: center center;
+          }
+           10% {@include img-heartbeat(.91, ease-in);}
+           17% {@include img-heartbeat(.98, ease-out);}
+           33% {@include img-heartbeat(.87, ease-in );}
+        }
+      }
+      h2{
+        margin-top: 2%;
+        font-size: 1.4em;
+        letter-spacing: .1em;
+      }
+    }
+    .nav-menu{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 50%;
+      top: 0;
+      position:relative;
+      li{
+        display: flex;
+        position: relative;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: .5rem;
+        a{
+          font-size: 1.4rem;
+          text-decoration: none;
+          transition: all 1.2s;
+        }
+      }
+      .li-effect{
+        &:hover .effect-a{
+          color: $color-secundario;
+        }
+        & .effect-a::before{
+          content: '';
+          height: 2px;
+          width: 0%;
+          background: $color-secundario;
+          position: absolute;
+          left: 0;
+          top: 1.7rem;
+          bottom: 3px;
+          transition: .5s ease-out;
+          border-radius: 8px;
+        }
+        &  .effect-a:hover::before{
+          width: 100%;
+        }
+      }
+      .li-faq, .li-index{
+        .effect-a::before{
+          width: 100%;
+        }
+      }
+      .dropdown-menu{
+        .submenu{
+          width: 180px;
+          padding: 15px 25px;
+          background-color: $gris;
+          border-radius: 12px;
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: calc(100% + 5px);
+          left: -4;
+          li{
+            border-left: pink 2px solid;
+            width: 100%;
+            padding: 6px 20px 6px 6px;
+            a{
+              font-size: 1.2rem;
+              width: 100%;
+              padding-left: 5px;
+              transition: .5s ease;
+              &:hover{
+                color: $color-secundario
+              }
+            }
+          }
+        }
+        display: flex;
+        flex-direction: column;
+        &:hover > .submenu{
+          display: flex;
+        }
+      }
+    }
+    .burger{
+      display: block;
+      position: relative;
+      width: 50px;
+      height: 35px;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      overflow: hidden;
+      justify-self: end;
+      span{
+        position: absolute;
+        width: 40px;
+        height: 4px;
+        background: $color-secundario;
+        border-radius: 4px;
+        transition: .5s;
+        &:nth-child(1){
+          transform: translateY(-15px);
+          width: 30px;
+          left: 5px;
+        }
+        &:nth-child(2){
+          transform: translateY(15px);
+          width: 18px;
+          left: 5px;
+        }
+      }
+    }
+    .burger.active{
+      span{
+        &:nth-child(1){
+          width: 40px;
+          transform: translateY(0) rotate(45deg);
+          transition-delay: .125s;
+        }
+        &:nth-child(2){
+          width: 40px;
+          transform: translateY(0) rotate(315deg);
+          transition-delay: .25s;
+        }
+        &:nth-child(3){
+          transform: translateX(60px);
+        }
+      }
+    }
+  }
+}
+
+.scroll-header{
+  background: #000000;
+  padding: 1.1% 1.8%;
+}

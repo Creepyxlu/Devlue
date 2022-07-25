@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devlúe</title>
+    <meta name="description" content="Nos encargamos del diseño y desarrollo de un Sitio web a tu medida, esenciab y estilo!">
+    <!-- FontAwesome - Iconos  -->
+    <script src="https://kit.fontawesome.com/721fae9f1a.js" crossorigin="anonymous"></script>
+    <!-- Favicon-->
+    <link rel="icon" href="./assets/devlue-favicon.ico">
+    <!--Hoja de estilos css-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <nav>
+          <div class="img-text">
+            <img src="./assets/devlue icon.svg" alt="header imagen Devlue">
+            <h2>Devlúe|Inicio</h2>
+          </div>
+          <ul class="nav-menu">
+            <li  class="li-effect li-index dropdown-menu">
+                <a class="effect-a" href="./index.html">
+                    Inicio
+                </a>
+                <ol class="submenu">
+                    <li><a href="#presentacion">Presentación</a></li>
+                    <li><a href="#servicio">Servicio</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ol>
+            </li>
+            <li  class="li-effect dropdown-menu">
+                <a class="effect-a" href="#">Social</a>
+                <ol class="submenu">
+                    <li><a target="_blank" href="https://github.com/Creepyxlu">Github</a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/eyelen-millen-dev">LinkedIn</a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/lu_dopata/">Instagram</a></li>
+                </ol>
+            </li>
+            <li class=" li-effect">
+                <a class="effect-a" href="./pages/faq.html">
+                Preguntas Frecuentes</a>
+            </li>
+          </ul>
+    
+          <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+    </header>
+
+    <main class="index-main">
+        <section class="section-1" id="presentacion">
+            <div class="typewriter">
+                <h1>
+                    Bienvenido a <span>DevLúe</span></span>
+                </h1>
+            </div>
+            <div>
+                <img src="./assets/devlue.svg" alt="">
+                <div>
+                    <p>
+                        Soy una joven autodidacta comprometida con el desarrollo web. Amo hacer proyectos con calidad, profesionalidad y pasión.
+                    </p>
+                    <p>
+                        Me gusta ayudar a transformar las ideas de mis clientes en su espacio, a través de mi servicio y asesoramiento. Saber que se llevan de mí algo más que un sitio web me encanta.
+                    </p>
+                    <p>
+                        A través de clases en línea, desde amigos hasta desarrolladores profesionales, he aprendido a brindar uno de los mejores servicios que un desarrollador junior puede ofrecer.
+                    </p>
+                    <p>  
+                        Domino HTML5, CS3, y estoy aprendiendo JavaScript y diseño web profesional.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-2" id="servicio">
+            <span class="line-gradient"></span>
+            <h2>Mi Servicio</h2>
+            <div class="carousel">
+
+                <input type="radio" id="page1cb" checked name="pages"/>
+                <label for="page1cb"></label>
+
+                <input type="radio" id="page2cb" name="pages"/>
+                <label for="page2cb"></label>
+
+                <input type="radio" id="page3cb" name="pages"/>
+                <label for="page3cb"></label>
+
+                <page id="page1">
+                  <h3>Acuerdos</h3>
+                  <div>
+                    <img src="./assets/Component 7.svg" alt="">
+                    <div class="card-text">
+                        <p>
+                            Será vital una buena comunicación e interacción para que podamos trabajar de forma fluída, cómoda y productiva. Ya que si no hay buena comunicación el proyecto puede que tenga complicaciones, por eso no es buena idea ignorar las formas eficientes y positivas en las que podemos llegar tanto a ideas como pruebas, y resultados juntos.
+                        </p>
+                        <p>
+                            Independientemente de su decisión de que hagamos o no su proyecto juntos, tanto consultas, como ideas, y sugerencias, son bienvenidas en la caja de comentario y en el chat privado.
+                        </p>
+                    </div>
+                  </div>
+                    <label for="page2cb">Siguiente</label>
+                </page>
+
+                <page id="page2">
+                  <h3>Diseño y Presupuesto</h3>
+                  <div>
+                    <img src="./assets/desing.png" alt="">
+                    <p  class="small-text">
+                        Procederemos a crear un diseño base funcional y completo pero sin llegar a desarrollarlo con código. El objetivo de esta fase es que pueda probar y autorizar la idea final, debe saber que durante el proceso de dearrollo pueden hacerse cambios y retoques.
+                    </p>
+                  </div>
+                    <label for="page3cb" title="Siguiente">Siguiente</label>
+                </page>
+
+                <page id="page3">
+                <h3>Estructura de tu Sitio Web</h3>
+                <div>
+                    <img src="./assets/html-css-js.png" alt="">
+                    <p class="small-text">
+                        Una vez acordado el diseño, procederemos a comenzar el desarrollo de tu Sitio Web con HTML5.Herramienta que nos sirve para la estructura (esqueleto) base del resultado final. Le daremos un estilo único, intuitivo y personalizado a tu Sitio con CCS3 y con la tecnología de JavaScript, tu Sitio tendrá mejor funcionalidad.
+                    </p>
+                </div>
+                <label class="back" for="page1cb" title="Volver">
+                    volver
+                </label>
+                </page>
+            </div>
+        </section>
+
+        <section class="section-3" id="skills">
+            <div class="card">
+                <div class="ds-top"></div>
+                <div class="left">
+                    <div class="img-container">
+                        <img src="./assets/WhatsApp Image 2022-07-22 at 4.25.03 PM (1)-modified.png" alt="Eyelen Millen">
+                    </div>
+                    <h4>Eyelen Millen</h4>
+                    <h5><i class="fas fa-users"></i>
+                        <span class="followers">160</span>
+                    </h5>
+                    <a href="#"> <span>Seguir</span> <i class="fas fa-user-plus"></i></a>
+                </div>
+                <div class="right">
+                    <div class="ds-info">
+                        <div class="ds pens">
+                          <h6 title="Number of pens created by the user">
+                            <span>Pens</span>
+                            <i class="fas fa-edit"></i></h6>
+                          <p>29</p>
+                        </div>
+                        <div class="ds projects">
+                          <h6 title="Number of projects created by the user">
+                            <span>Projects</span>
+                            <i class="fas fa-project-diagram"></i></h6>
+                          <p>0</p>
+                        </div>
+                        <div class="ds posts">
+                          <h6 title="Number of posts">
+                            <span>Posts</span>
+                            <i class="fas fa-comments"></i></h6>
+                          <p>0</p>
+                        </div>
+                      </div>
+                      <div class="ds-skill">
+                        <h6>
+                            <span>Skills</span>
+                             <i class="fa fa-code" aria-hidden="true"></i>
+                        </h6>
+                        <div class="skill html">
+                          <h6><i class="fab fa-html5"></i> HTML5 </h6>
+                          <div class="bar bar-html">
+                            <p>95%</p>
+                          </div>
+                        </div>
+                        <div class="skill css">
+                          <h6><i class="fab fa-css3-alt"></i> CSS3 </h6>
+                          <div class="bar bar-css">
+                            <p>90%</p>
+                          </div>
+                        </div>
+                        <div class="skill javascript">
+                          <h6><i class="fab fa-js"></i> JavaScript </h6>
+                          <div class="bar bar-js">
+                            <p>75%</p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="box">
+            <div class="logo">
+                <svg width="300" height="300" viewBox="0 0 250 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="devlue icon 1">
+                    <path id="Vector" d="M143.708 178.883C104.301 198.863 56.1582 183.115 36.1778 143.708C16.1973 104.301 31.9456 56.1582 71.3524 36.1778C110.759 16.1973 158.902 31.9456 178.883 71.3524C198.863 110.759 183.115 158.902 143.708 178.883ZM72.9804 39.3886C35.3469 58.47 20.3073 104.446 39.3887 142.08C58.47 179.714 104.446 194.753 142.08 175.672C179.714 156.59 194.753 110.614 175.672 72.9804C156.59 35.3469 110.614 20.3073 72.9804 39.3886Z" fill="#5800FF"/>
+                    <path id="Vector_2" d="M102.762 88.1814C102.835 88.1447 102.924 88.174 102.959 88.2478C103.552 89.5022 103.734 90.9144 103.477 92.2815C103.211 93.6971 102.489 94.9859 101.422 95.9495C100.354 96.9131 99.0014 97.4982 97.5707 97.6146C96.1401 97.7311 94.7111 97.3725 93.5037 96.594C92.2963 95.8155 91.3775 94.6603 90.8886 93.3061C90.3996 91.952 90.3677 90.4739 90.7978 89.0994C91.2278 87.7249 92.096 86.5302 93.2686 85.6991C94.401 84.8966 95.7567 84.4761 97.14 84.4959C97.2216 84.4971 97.2853 84.5659 97.2823 84.6475C97.2793 84.7291 97.2107 84.7926 97.129 84.7915C95.8103 84.7739 94.5181 85.1755 93.4385 85.9406C92.3187 86.7343 91.4896 87.8753 91.0789 89.1879C90.6682 90.5005 90.6986 91.9121 91.1655 93.2053C91.6325 94.4985 92.51 95.6018 93.663 96.3452C94.8161 97.0887 96.1807 97.4312 97.547 97.3199C98.9133 97.2087 100.205 96.65 101.225 95.7297C102.244 94.8095 102.934 93.5787 103.188 92.2268C103.433 90.9231 103.26 89.5765 102.695 88.3798C102.661 88.3063 102.69 88.218 102.762 88.1814Z" fill="#5800FF" stroke="#5800FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path id="Vector_3" d="M71.3018 57.2839C71.1519 57.3245 70.9972 57.2358 70.96 57.0849C70.3846 54.7468 70.4964 52.29 71.285 50.0107C72.1044 47.6427 73.6165 45.5756 75.6251 44.0776C77.6338 42.5797 80.0463 41.7199 82.5496 41.61C85.0529 41.5001 87.5314 42.145 89.6637 43.4612C91.7959 44.7774 93.4833 46.7039 94.5071 48.991C95.5308 51.2781 95.8436 53.82 95.4048 56.287C94.966 58.754 93.7958 61.0322 92.0463 62.8259C90.3622 64.5525 88.2161 65.7536 85.868 66.2872C85.7166 66.3216 85.5679 66.223 85.5369 66.0708C85.5059 65.9186 85.6043 65.7704 85.7557 65.7358C87.9933 65.2249 90.0382 64.079 91.6436 62.4332C93.3144 60.7201 94.4319 58.5445 94.851 56.1885C95.27 53.8325 94.9713 51.405 93.9937 49.2208C93.016 47.0367 91.4045 45.1968 89.3682 43.9399C87.3319 42.6829 84.9649 42.067 82.5742 42.172C80.1836 42.2769 77.8797 43.098 75.9614 44.5286C74.0431 45.9591 72.5991 47.9332 71.8166 50.1946C71.0649 52.3674 70.9571 54.709 71.5032 56.9382C71.5402 57.0891 71.4518 57.2434 71.3018 57.2839Z" fill="#5800FF" stroke="#5800FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path id="Vector_4" d="M145.522 102.276C145.531 102.586 145.286 102.846 144.975 102.847C141.883 102.863 138.813 102.305 135.922 101.2C132.855 100.028 130.049 98.2629 127.665 96.0064C125.28 93.7499 123.363 91.0458 122.024 88.0485C120.76 85.2224 120.034 82.1879 119.879 79.0996C119.864 78.7894 120.109 78.5306 120.42 78.522C120.73 78.5134 120.988 78.7583 121.004 79.0686C121.155 82.0092 121.848 84.8983 123.051 87.5894C124.33 90.4519 126.161 93.0343 128.438 95.1893C130.715 97.3442 133.395 99.0296 136.323 100.149C139.077 101.201 142 101.734 144.944 101.722C145.255 101.721 145.514 101.965 145.522 102.276Z" fill="#5800FF" stroke="#5800FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path id="Vector_5" d="M103.119 87.895L122.788 105.706" stroke="#5800FF" stroke-width="3" stroke-linecap="round"/>
+                    <path id="Vector_6" d="M125.296 95.2532L117.526 99.795" stroke="#5800FF" stroke-width="3" stroke-linecap="round"/>
+                    <path id="Vector_7" d="M102.237 60.4434L96.1773 58.5167" stroke="#5800FF" stroke-width="3" stroke-linecap="round"/>
+                    <path id="Vector_8" d="M97 84L91 79" stroke="#5800FF" stroke-width="3" stroke-linecap="round"/>
+                    <path id="Vector_9" d="M91.8563 74.8018L104.144 66.1983" stroke="#5800FF" stroke-width="3" stroke-linecap="round"/>
+                    <path id="Vector_10" d="M169.673 74.4189L157.331 92.6309" stroke="#5800FF" stroke-width="3" stroke-linecap="round"/>
+                    <path id="Vector_11" d="M166.652 95.4783L158 93" stroke="#5800FF" stroke-width="3" stroke-linecap="round"/>
+                    <path id="Vector_12" d="M166.229 96L142 113.69" stroke="#5800FF" stroke-width="3" stroke-linecap="round"/>
+                    <path id="Vector_13" d="M142.266 102.896L141.611 113.876" stroke="#5800FF" stroke-width="3" stroke-linecap="round"/>
+                    <path id="Vector_14" d="M68.7012 105.701H121.701" stroke="#5800FF" stroke-width="3" stroke-linecap="round"/>
+                    <path id="Vector_15" d="M39.0625 70.496L67.496 116.937" stroke="#5800FF" stroke-width="3" stroke-linecap="round"/>
+                    <path id="Vector_16" d="M72.4087 106.137L68.1369 117.351" stroke="#5800FF" stroke-width="3" stroke-linecap="round"/>
+                    <g id="rat-eye">
+                    <path id="Vector_17" d="M100 91.5C100 92.8807 98.8807 94 97.5 94C96.1193 94 95 92.8807 95 91.5C95 90.1193 96.1193 89 97.5 89C98.8807 89 100 90.1193 100 91.5Z" fill="#5800FF"/>
+                    </g>
+                    <path id="Vector_18" d="M92.5172 80.2444C89.6431 78.9343 90.116 74.6951 93.2165 74.0918" stroke="#5800FF" stroke-width="2.8" stroke-linecap="round"/>
+                    <path id="Vector_19" d="M102.857 60.5947C105.934 61.3223 106.295 65.5759 103.369 66.7728" stroke="#5800FF" stroke-width="2.8" stroke-linecap="round"/>
+                    <g id="letras">
+                    <path id="Vector_20" d="M136.057 155.392C136.345 155.392 136.777 155.28 137.353 155.056L149.113 149.872C149.529 149.168 149.737 148.416 149.737 147.616C149.737 147.168 149.641 146.768 149.449 146.416C149.225 146.032 148.905 145.728 148.489 145.504L135.817 139.36C135.401 139.744 135.081 140.176 134.857 140.656C134.601 141.136 134.457 141.552 134.425 141.904C134.425 142.48 134.665 142.88 135.145 143.104L144.649 147.76L134.329 152.368C134.329 153.232 134.521 153.952 134.905 154.528C135.289 155.104 135.673 155.392 136.057 155.392Z" fill="#5800FF"/>
+                    <path id="Vector_21" d="M96.5969 161.215L107.45 131.304C107.546 131.043 107.664 130.863 107.804 130.765C107.971 130.641 108.296 130.581 108.776 130.584C109.259 130.56 110.032 130.581 111.097 130.646L100.239 160.637C100.171 160.874 100.054 161.04 99.8879 161.137C99.72 161.26 99.3957 161.32 98.915 161.317C98.4342 161.315 97.6615 161.281 96.5969 161.215ZM109.898 162.032L120.751 132.12C120.848 131.859 120.965 131.679 121.105 131.581C121.273 131.458 121.597 131.398 122.078 131.4C122.56 131.377 123.334 131.397 124.399 131.463L113.541 161.454C113.473 161.69 113.356 161.857 113.189 161.953C113.022 162.076 112.697 162.137 112.216 162.134C111.736 162.131 110.963 162.097 109.898 162.032Z" fill="#5800FF"/>
+                    <path id="Vector_22" d="M83.8026 155.392C83.5146 155.392 83.0826 155.28 82.5066 155.056L70.7466 149.872C70.3306 149.168 70.1226 148.416 70.1226 147.616C70.1226 147.168 70.2186 146.768 70.4106 146.416C70.6346 146.032 70.9546 145.728 71.3706 145.504L84.0426 139.36C84.4586 139.744 84.7786 140.176 85.0026 140.656C85.2586 141.136 85.4026 141.552 85.4346 141.904C85.4346 142.48 85.1946 142.88 84.7146 143.104L75.2106 147.76L85.5306 152.368C85.5306 153.232 85.3386 153.952 84.9546 154.528C84.5706 155.104 84.1866 155.392 83.8026 155.392Z" fill="#5800FF"/>
+                    </g>
+                    </g>
+                </svg>   
+            </div>
+            <div class="text">
+                <h2> Devlúe</h2>
+                <p>
+                    Diseño y desarrollo tu Sitio Web acorde a tus necesidades, acorde a tus gustos, acorde a vos.
+                </p>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/eyelen-millen-dev" target="_blank">
+                        <i class="fa-brands fa-linkedin-in fa-3x icon-3d"></i>
+                    </a></li>
+    
+                    <li><a href="https://github.com/Creepyxlu" target="_blank">
+                        <i class="fa fa-github fa-3x icon-3d"></i>
+                    </a></li>
+    
+                    <li><a href="https://instagram.com/lu_dopata?utm_medium=copy_link" target="_blank">
+                        <i class="fa fa-instagram fa-3x icon-3d"></i>
+                    </a></li>
+    
+                    <li><a href="https://twitter.com/dev_a_Lue_?t=CIbS4d14P4I76mX4oeGl7g&s=09" target="_blank">
+                        <i class="fa fa-twitter fa-3x icon-3d"></i>
+                    </a></li>
+    
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__derechos-reservados col-12">
+            <small> &copy; 2021 <b> Devlue </b> - Todos los Derechos Reservados.
+            </small>
+        </div>
+    </footer>
+
+    <script src="./js/particles.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
