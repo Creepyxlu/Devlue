@@ -1,10 +1,12 @@
 const header = document.querySelector("header");
-const menutoggle = document.querySelector('.toggle');
+const menutoggle = document.querySelector(".nav-menu");
+const burger = document.querySelector("burger")
 
-window.addEventListener("scroll", function(){
-  header.classList.toggle("scroll-header", window.scrollY>0);
+window.addEventListener("scroll", ()=>{
+  header.classList.toggle("scroll-header", window.scrollY>100);
 })
 
-menutoggle.onclick = ()=>{
-    menutoggle.classList.toggle('active');
-}
+
+burger.addEventListener("onclick", ()=>{
+    menutoggle.classList.toggle("active");
+})

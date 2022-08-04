@@ -95,6 +95,7 @@ header{
           position: absolute;
           top: calc(100% + 5px);
           left: -4;
+          transition: 2s;
           li{
             border-left: pink 2px solid;
             width: 100%;

@@ -1,0 +1,23 @@
+{
+  "name": "devlue",
+  "version": "1.0.0",
+  "description": "Proyecto Final de Coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "start": "sass ./scss/style.scss ./css/style.css -w --no-source-map -s compressed",
+    "build": "none build --output public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Creepyxlu/Devlue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Creepyxlu/Devlue/issues"
+  },
+  "homepage": "https://github.com/Creepyxlu/Devlue#readme"
+}
